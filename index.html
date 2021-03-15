@@ -30,10 +30,10 @@
         </section>
         <section>
             <h1>Multiplicando Valores</h1>
-            <input type="number" name="n1" id="n1"> *
-            <input type="number" name="n2" id="n2">
+            <input type="number" name="mult1" id="mult1"> *
+            <input type="number" name="mult2" id="mult2">
             <input type="button" value="multiplicar" onclick="multiplicar()">
-            <div id="res">Resultado</div>
+            <div id="mult">Resultado</div>
         </section>
         <section>
             <h1>Dividindo Valores</h1>
@@ -63,6 +63,16 @@
             var sub2 = Number(sub2.value)
             var s= sub1-sub2
             res.innerHTML = `A subtração entre ${sub1} e ${sub2} é igual a <strong> ${s}</strong>`
+        }
+        
+            function multiplicar() {
+            var mult1 = window.document.getElementById('mult1')
+            var mult2 = window.document.getElementById('mult2')
+            var res= window.document.getElementById('mult')
+            var mult1 = Number(mult1.value)
+            var mult2 = Number(mult2.value)
+            var s= mult1*mult2
+            res.innerHTML = `A multiplicação entre ${mult1} e ${mult2} é igual a <strong> ${s}</strong>`
         }
     </script>
     
