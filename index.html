@@ -37,10 +37,10 @@
         </section>
         <section>
             <h1>Dividindo Valores</h1>
-            <input type="number" name="n1" id="n1"> /
-            <input type="number" name="n2" id="n2">
+            <input type="number" name="div1" id="div1"> /
+            <input type="number" name="div2" id="div2">
             <input type="button" value="dividir" onclick="dividir()">
-            <div id="res">Resultado</div>
+            <div id="divisao">Resultado</div>
         </section>
     </main>
    
@@ -73,6 +73,15 @@
             var mult2 = Number(mult2.value)
             var s= mult1*mult2
             res.innerHTML = `A multiplicação entre ${mult1} e ${mult2} é igual a <strong> ${s}</strong>`
+        }
+            function dividir() {
+            var div1 = window.document.getElementById('div1')
+            var div2 = window.document.getElementById('div2')
+            var res= window.document.getElementById('divisao')
+            var div1 = Number(div1.value)
+            var div2 = Number(div2.value)
+            var s= div1/div2
+            res.innerHTML = `A divisão entre ${div1} e ${div2} é igual a <strong> ${s}</strong>`
         }
     </script>
     
