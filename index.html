@@ -19,14 +19,14 @@
             <input type="number" name="n1" id="n1"> +
             <input type="number" name="n2" id="n2">
             <input type="button" value="somar" onclick="somar()">
-            <div id="res">Resultado</div>
+            <div id="soma">Resultado</div>
         </section>
         <section>
             <h1>Subtraindo Valores</h1>
             <input type="number" name="sub1" id="sub1"> -
             <input type="number" name="sub2" id="sub2">
             <input type="button" value="subtrair" onclick="subtrair()">
-            <div id="res">Resultado</div>
+            <div id="sub">Resultado</div>
         </section>
         <section>
             <h1>Multiplicando Valores</h1>
@@ -48,11 +48,21 @@
         function somar() {
             var n1 = window.document.getElementById('n1')
             var n2 = window.document.getElementById('n2')
-            var res= window.document.getElementById('res')
+            var res= window.document.getElementById('soma')
             var n1 = Number(n1.value)
             var n2 = Number(n2.value)
             var s= n1+n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong> ${s}</strong>`
+        }
+
+        function subtrair() {
+            var sub1 = window.document.getElementById('sub1')
+            var sub2 = window.document.getElementById('sub2')
+            var res= window.document.getElementById('sub')
+            var sub1 = Number(sub1.value)
+            var sub2 = Number(sub2.value)
+            var s= sub1-sub2
+            res.innerHTML = `A subtração entre ${sub1} e ${sub2} é igual a <strong> ${s}</strong>`
         }
     </script>
     
