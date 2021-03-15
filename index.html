@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <style>
+        body {
+            background-color:rgb(218, 75, 149);
+            font-style: italic;
+            text-align: center;
+            font: 25pt;
+            color: rgb(78, 8, 78);
+        
+        }
+        input{
+            font:normal 14pt Arial;
+            width: 100px;
+            bottom: auto;
+            border-color: rgb(20, 220, 193);
+            color: darkred;
+        }
+
+
+         
+    
+    </style>
 </head>
 
 <body>
@@ -19,29 +40,30 @@
             <input type="number" name="n1" id="n1"> +
             <input type="number" name="n2" id="n2">
             <input type="button" value="somar" onclick="somar()">
-            <div id="soma">Resultado</div>
+            <div id="soma"></div>
         </section>
         <section>
             <h1>Subtraindo Valores</h1>
             <input type="number" name="sub1" id="sub1"> -
             <input type="number" name="sub2" id="sub2">
             <input type="button" value="subtrair" onclick="subtrair()">
-            <div id="sub">Resultado</div>
+            <div id="sub"></div>
         </section>
         <section>
             <h1>Multiplicando Valores</h1>
             <input type="number" name="mult1" id="mult1"> *
             <input type="number" name="mult2" id="mult2">
             <input type="button" value="multiplicar" onclick="multiplicar()">
-            <div id="mult">Resultado</div>
+            <div id="mult"></div>
         </section>
         <section>
             <h1>Dividindo Valores</h1>
             <input type="number" name="div1" id="div1"> /
             <input type="number" name="div2" id="div2">
             <input type="button" value="dividir" onclick="dividir()">
-            <div id="divisao">Resultado</div>
+            <div id="divisao"></div>
         </section>
+
     </main>
    
    <script>
@@ -83,6 +105,8 @@
             var s= div1/div2
             res.innerHTML = `A divisão entre ${div1} e ${div2} é igual a <strong> ${s}</strong>`
         }
+
+        
     </script>
     
 </body>
